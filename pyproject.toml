@@ -1,0 +1,28 @@
+[project]
+name = "morocco-weather-tracker"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "requests (>=2.34.2,<3.0.0)",
+    "pandas (>=3.0.3,<4.0.0)",
+    "pyarrow (>=24.0.0,<25.0.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)",
+    "pyyaml (>=6.0.3,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.5.1,<27.0.0)",
+    "ruff (>=0.15.13,<0.16.0)",
+    "mypy (>=2.1.0,<3.0.0)",
+    "ipython (>=9.13.0,<10.0.0)"
+]
